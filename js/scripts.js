@@ -132,7 +132,7 @@ function checkGameEnd() {
     if (player.score == 10) {
         playerPointsElem.innerHTML = '0';
         computerPointsElem.innerHTML = '0';
-        ameState = 'ended';
+        gameState = 'ended';
 
         setGameElements();
 
