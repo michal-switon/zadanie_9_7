@@ -128,14 +128,23 @@ function setGamePoints() {
 }
 
 function checkGameEnd() {
-    
+
     if (player.score == 10) {
-        gameState = 'ended';
+        playerPointsElem.innerHTML = '0';
+        computerPointsElem.innerHTML = '0';
+        ameState = 'ended';
+
         setGameElements();
+
         alert('And the winner is ' + player.name);
+
     } else if (computer.score == 10) {
+        playerPointsElem.innerHTML = '0';
+        computerPointsElem.innerHTML = '0';
         gameState = 'ended';
+
         setGameElements();
+        
         alert('And the winner is Computer');
     }
 }
